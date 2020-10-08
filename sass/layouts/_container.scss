@@ -1,7 +1,17 @@
 .container {
-	width: 1200px;
+	max-width: 480px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+
+	background-color: tan;
+
+	@media screen and (min-width: $tablet) {
+		max-width: $tablet;
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: $desktop;
+	}
 }
