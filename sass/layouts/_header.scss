@@ -3,17 +3,15 @@
 }
 
 .header {
-	// display: flex;
 	position: relative;
-	// justify-content: flex-end;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 
 	@media screen and (min-width: $tablet) {
-		padding-top: 21px;
-		padding-bottom: 21px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -23,15 +21,26 @@
 }
 
 .navigation-box {
-	// display: flex;
-	// display: none;
-	// align-items: center;
-	// margin-right: auto;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+		margin-right: auto;
+	}
 }
 
-.navigation,
+.navigation {
+	display: inline-block;
+	@media screen and (min-width: $tablet) {
+		display: inline-flex;
+	}
+	background-color: rgba(0, 128, 128, 0.2);
+}
+
 .contacts {
 	display: inline-block;
+	@media screen and (min-width: $desktop) {
+		display: inline-flex;
+	}
 	background-color: rgba(0, 128, 128, 0.2);
 }
 
@@ -41,14 +50,30 @@
 	@media screen and (max-width: $tablet - 1px) {
 		display: flex;
 		justify-content: center;
+
+		&:first-child {
+			margin-bottom: 52px;
+		}
+
+		&:last-child {
+			margin-top: 40px;
+		}
 	}
 
-	&:first-child {
-		margin-bottom: 52px;
+	@media screen and (min-width: $tablet) {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+
+		&:last-child {
+			margin-right: 84px;
+		}
 	}
 
-	&:last-child {
-		margin-top: 40px;
+	@media screen and (min-width: $desktop) {
+		&:last-child {
+			margin-right: 305px;
+		}
 	}
 }
 
@@ -56,35 +81,40 @@
 	@media screen and (max-width: $tablet - 1px) {
 		display: flex;
 		justify-content: center;
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
 	}
 
-	&:not(:last-child) {
-		margin-bottom: 16px;
+	@media screen and (min-width: $tablet) {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (min-width: $desktop) {
+		&:not(:last-child) {
+			margin-bottom: 0;
+			margin-right: 30px;
+		}
 	}
 }
-
-// desktop
-// .navigation__item {
-// 	position: relative;
-
-// 	&:not(:last-child) {
-// 		margin-right: 50px;
-// 	}
-// }
-
-// desktop
-// .contacts__item:not(:last-child) {
-// 	margin-right: 30px;
-// }
 
 .navigation__link,
 .contacts {
 	font-weight: 500;
-	line-height: 1.14;
 	letter-spacing: 0.02em;
 	text-decoration: none;
 	color: $title-text-color;
 	transition: color $transition-time $transition-function;
+}
+
+.contacts {
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		font-size: 12px;
+		line-height: 1.167;
+	}
 }
 
 .contacts__link {

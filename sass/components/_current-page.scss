@@ -12,10 +12,11 @@
 		border-radius: 2px;
 		background-color: $accent-color;
 
-		// bottom: -32px;
-		// left: 0;
-		// width: 100%;
+		@media screen and (min-width: $tablet) {
+			bottom: -32px;
+			left: 0;
+			width: 100%;
+			transform: translate(0);
+		}
 	}
-
-
 }

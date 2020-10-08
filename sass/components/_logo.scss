@@ -14,10 +14,6 @@
 
 .logo__header {
 	color: $header-logo-color;
-
-	@media screen and (min-width: $desktop) {
-		margin-right: 93px;
-	}
 }
 
 .logo__footer {
