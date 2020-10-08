@@ -1,0 +1,31 @@
+.net-list {
+	justify-content: center;
+	align-items: center;
+}
+
+.net-list__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.net-list__link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	fill: #afb1b8;
+	transition: background-color $transition-time $transition-function, fill $transition-time $transition-function;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		fill: $accent-text-color;
+	}
+}
+
+.net-list__icon {
+	width: 20px;
+	height: 20px;
+}

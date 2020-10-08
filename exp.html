@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/modern-normalize.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=fallback"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/main.min.css" />
+		<title>Experiment Page</title>
+	</head>
+	<body>
+		<header class="header-border">
+			<div class="container flexbox header">
+				<!-- logo -->
+				<a href="./index.html" class="logo logo__header link"><span class="logo--accent">Web</span>Studio</a>
+				<nav class="navigation-box">
+					<!-- navigation list -->
+					<ul class="navigation list">
+						<li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+						<li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
+						<li class="navigation__item"><a href="./exp.html" class="navigation__link current-page">Контакты</a></li>
+					</ul>
+				</nav>
+				<!-- tel & mail -->
+				<ul class="contacts list">
+					<li class="contacts__item">
+						<a href="mailto:info@devstudio.com" class="contacts__link">
+							<svg class="envelope">
+								<use href="./images/icons/sprite.svg#sprite-envelope"></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="contacts__item">
+						<a href="tel:+380961111111" class="contacts__link">
+							<svg class="smartphone">
+								<use href="./images/icons/sprite.svg#sprite-smartphone"></use>
+							</svg>
+							+38 096 111 11 11</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main></main>
+		<footer class="footer-background">
+			<div class="container flexbox footer">
+				<!-- address block-->
+				<div class="address-wrap">
+					<!-- logo -->
+					<a href="./index.html" class="logo logo__footer link"><span class="logo--accent">Web</span>Studio</a>
+					<address class="address">
+						<ul class="address__list list">
+							<li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+							<li class="address__item">
+								<a href="mailto:info@devstudio.com" class="address__link link">info@devstudio.com</a>
+							</li>
+							<li class="address__item">
+								<a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
+							</li>
+						</ul>
+					</address>
+				</div>
+				<!-- join block -->
+				<div class="join">
+					<p class="join__heading">присоединяйтесь</p>
+					<ul class="join__list flexbox list">
+						<li class="join__item">
+							<a href="https://www.instagram.com/" class="join__link" aria-label="ссылка на профиль в Instagram">
+								<svg class="join__icon">
+									<use href="./images/icons/sprite.svg#sprite-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="join__item">
+							<a href="https://twitter.com/" class="join__link" aria-label="ссылка на профиль в Twitter">
+								<svg class="join__icon">
+									<use href="./images/icons/sprite.svg#sprite-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="join__item">
+							<a href="https://www.facebook.com/" class="join__link" aria-label="ссылка на профиль в Facebook">
+								<svg class="join__icon">
+									<use href="./images/icons/sprite.svg#sprite-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="join__item">
+							<a href="https://www.linkedin.com/" class="join__link" aria-label="ссылка на профиль в LinkedIn">
+								<svg class="join__icon">
+									<use href="./images/icons/sprite.svg#sprite-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- submit us block -->
+				<div class="subscribe">
+					<p class="subscribe__heading">Подпишитесь на рассылку</p>
+					<form class="subscribe__form">
+						<input
+							type="email"
+							name="user-email"
+							id="user-email"
+							class="subscribe__email"
+							placeholder="E-mail"
+							required
+							autocomplete="off"
+						/>
+						<button class="form-button">
+							Подписаться
+							<svg class="subscribe__icon">
+								<use href="./images/icons/sprite.svg#sprite-footer-send"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

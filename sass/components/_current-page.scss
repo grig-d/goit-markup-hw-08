@@ -1,0 +1,14 @@
+.current-page {
+	color: $accent-color;
+
+	&::after {
+		position: absolute;
+		bottom: -32px;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 4px;
+		border-radius: 2px;
+		background-color: $accent-color;
+	}
+}
