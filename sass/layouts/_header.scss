@@ -3,11 +3,14 @@
 }
 
 .header {
+	position: relative;
 	// justify-content: flex-end;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	// padding-top: 25px;
+	// padding-bottom: 25px;
 }
 
 .navigation-box {
