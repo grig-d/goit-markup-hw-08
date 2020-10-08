@@ -3,12 +3,19 @@
 
 	&::after {
 		position: absolute;
-		bottom: -32px;
-		left: 0;
+		bottom: -8px;
+		left: 50%;
+		transform: translate(-50%, 0);
 		content: "";
-		width: 100%;
+		width: 62px;
 		height: 4px;
 		border-radius: 2px;
 		background-color: $accent-color;
+
+		// bottom: -32px;
+		// left: 0;
+		// width: 100%;
 	}
+
+
 }

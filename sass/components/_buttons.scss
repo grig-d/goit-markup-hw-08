@@ -20,6 +20,17 @@
 	@media screen and (min-width: $tablet) {
 		display: none;
 	}
+
+	&:hover .burger,
+	&:hover .burger-close,
+	&:focus-within .burger,
+	&:focus-within .burger-close {
+		fill: $accent-color;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .form-button {
