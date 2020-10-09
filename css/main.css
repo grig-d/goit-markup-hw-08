@@ -1028,6 +1028,12 @@ textarea {
   margin: 10px 0 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
 .work__list {
   flex-wrap: wrap;
 }
