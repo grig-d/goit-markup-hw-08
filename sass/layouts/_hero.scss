@@ -43,17 +43,22 @@
 	}
 
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: center;
+	background-size: cover;
 }
 
-// .hero__title {
-// 	margin-top: 0;
-// 	margin-bottom: 30px;
-// 	font-weight: 900;
-// 	font-size: 44px;
-// 	line-height: 60px;
-// 	letter-spacing: 0.06em;
-// 	text-transform: uppercase;
-// 	color: $hero-text-color;
-// }
+.hero__title {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.616;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: $hero-text-color;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 44px;
+		line-height: 1.364;
+	}
+}
