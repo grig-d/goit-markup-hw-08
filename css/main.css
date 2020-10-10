@@ -738,7 +738,6 @@ textarea {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(255, 145, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -1312,12 +1311,25 @@ textarea {
 
 .filter {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px -4px 40px -4px;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__item {
+  margin: 15px 4px 0px 4px;
 }
 
 .portfolio {
