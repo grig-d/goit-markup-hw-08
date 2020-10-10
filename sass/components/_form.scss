@@ -71,7 +71,6 @@
 	height: 18px;
 	fill: $title-text-color;
 	transition: fill $transition-time $transition-function;
-	z-index: -1;
 
 	.form__field:hover + &,
 	.form__label:focus-within & {
@@ -80,10 +79,19 @@
 }
 
 .form__deal {
-	display: flex;
-	height: 24px;
+	height: 15px;
 	margin-bottom: 30px;
-	line-height: 1.714;
+	@media screen and (max-width: $desktop - 1px) {
+		display: block;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.167;
+	}
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		height: 24px;
+		line-height: 1.714;
+	}
 	align-items: center;
 	cursor: pointer;
 }
@@ -108,12 +116,17 @@
 	display: inline-block;
 	width: 16px;
 	height: 15px;
-	margin-right: 8px;
+	margin-right: 4px;
+	@media screen and (min-width: $desktop) {
+		margin-right: 8px;
+	}
 	vertical-align: middle;
 }
 
 .form__accept {
-	margin: 0 4px 0 0;
+	@media screen and (min-width: $desktop) {
+		margin-right: 4px;
+	}
 	color: $primary-text-color;
 }
 
