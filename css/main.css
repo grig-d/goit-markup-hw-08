@@ -1136,23 +1136,27 @@ textarea {
 
 .team__card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__card {
+    padding-bottom: 30px;
+  }
 }
 
 .team__title {
   margin: 0 0 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: 1.188;
   color: #212121;
 }
 
 .team__text {
   margin: 0 0 16px;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: 1.188;
   color: #757575;
 }
 
