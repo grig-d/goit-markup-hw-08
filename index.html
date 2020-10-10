@@ -112,7 +112,7 @@
 					<ul class="work__list flexbox list">
 						<li class="work__item">
 							<img
-								srcset="./images/desktop/img1@2x.jpg 2x"
+								srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg 2x"
 								src="./images/desktop/img1.jpg"
 								width="370"
 								alt="Две руки на клавиатуре настольного компьютера"
@@ -121,7 +121,7 @@
 						</li>
 						<li class="work__item">
 							<img
-								srcset="./images/desktop/img2@2x.jpg 2x"
+								srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg 2x"
 								src="./images/desktop/img2.jpg"
 								width="370"
 								alt="Мобильный телефон в левой руке"
@@ -130,7 +130,7 @@
 						</li>
 						<li class="work__item">
 							<img
-								srcset="./images/desktop/img3@2x.jpg 2x"
+								srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg 2x"
 								src="./images/desktop/img3.jpg"
 								width="370"
 								alt="Планшет в левой руке"
@@ -140,13 +140,26 @@
 					</ul>
 				</div>
 			</section>
-			<!-- our team section -->
-			<!-- <section class="team-background">
-				<div class="container section team">
+			<section class="team-background">
+				<div class="container section">
 					<h2 class="section__title">Наша команда</h2>
-					<ul class="team__list flexbox list">
+					<ul class="team list">
 						<li class="team__item">
-							<img src="./images/team/imgproductdesigner.jpg" width="270" alt="Улыбающийся мужчина в очках с бородой" />
+							<picture>
+								<source
+									srcset="./images/mobile/imgproductdesigner.jpg 1x, ./images/mobile/imgproductdesigner@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./images/tablet/imgproductdesigner.jpg 1x, ./images/tablet/imgproductdesigner@2x.jpg 2x"
+									media="(max-width: 1199px)"
+								/>
+								<img
+									srcset="./images/desktop/imgproductdesigner.jpg 1x, ./images/desktop/imgproductdesigner@2x.jpg 2x"
+									src="./images/desktop/imgproductdesigner.jpg"
+									alt="Улыбающийся мужчина в очках с бородой"
+								/>
+							</picture>
 							<div class="team__card">
 								<h3 class="team__title">Игорь Демьяненко</h3>
 								<p class="team__text">Product Designer</p>
@@ -195,11 +208,21 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img
-								src="./images/team/imgfrontenddeveloper.jpg"
-								width="270"
-								alt="Улыбающаяся женщина в очках с длинными волосами"
-							/>
+							<picture>
+								<source
+									srcset="./images/mobile/imgfrontenddeveloper.jpg 1x, ./images/mobile/imgfrontenddeveloper@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./images/tablet/imgfrontenddeveloper.jpg 1x, ./images/tablet/imgfrontenddeveloper@2x.jpg 2x"
+									media="(max-width: 1199px)"
+								/>
+								<img
+									srcset="./images/desktop/imgfrontenddeveloper.jpg 1x, ./images/desktop/imgfrontenddeveloper@2x.jpg 2x"
+									src="./images/desktop/imgfrontenddeveloper.jpg"
+									alt="Улыбающаяся женщина в очках с длинными волосами"
+								/>
+							</picture>
 							<div class="team__card">
 								<h3 class="team__title">Ольга Репина</h3>
 								<p class="team__text">Frontend Developer</p>
@@ -248,7 +271,21 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/team/imgmarketing.jpg" width="270" alt="Улыбающийся мужчина" />
+							<picture>
+								<source
+									srcset="./images/mobile/imgmarketing.jpg 1x, ./images/mobile/imgmarketing@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./images/tablet/imgmarketing.jpg 1x, ./images/tablet/imgmarketing@2x.jpg 2x"
+									media="(max-width: 1199px)"
+								/>
+								<img
+									srcset="./images/desktop/imgmarketing.jpg 1x, ./images/desktop/imgmarketing@2x.jpg 2x"
+									src="./images/desktop/imgmarketing.jpg"
+									alt="Улыбающийся мужчина"
+								/>
+							</picture>
 							<div class="team__card">
 								<h3 class="team__title">Николай Тарасов</h3>
 								<p class="team__text">Marketing</p>
@@ -297,7 +334,21 @@
 							</div>
 						</li>
 						<li class="team__item">
-							<img src="./images/team/imguidesigner.jpg" width="270" alt="Улыбающийся мужчина в очках с бородой" />
+							<picture>
+								<source
+									srcset="./images/mobile/imguidesigner.jpg 1x, ./images/mobile/imguidesigner@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./images/tablet/imguidesigner.jpg 1x, ./images/tablet/imguidesigner@2x.jpg 2x"
+									media="(max-width: 1199px)"
+								/>
+								<img
+									srcset="./images/desktop/imguidesigner.jpg 1x, ./images/desktop/imguidesigner@2x.jpg 2x"
+									src="./images/desktop/imguidesigner.jpg"
+									alt="Улыбающийся мужчина в очках с бородой"
+								/>
+							</picture>
 							<div class="team__card">
 								<h3 class="team__title">Михаил Ермаков</h3>
 								<p class="team__text">UI Designer</p>
@@ -347,7 +398,7 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 			<!-- clients -->
 			<!-- <section>
 				<div class="container section">
