@@ -1,6 +1,16 @@
 .join {
-	width: calc((100% - 30px * 3) / 4);
-	margin-right: 30px;
+	@media screen and (max-width: $desktop - 1px) {
+		width: 100%;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	@media screen and (min-width: $tablet) {
+		width: calc((100% - 30px) / 2);
+	}
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 30px * 3) / 4);
+		margin-right: 30px;
+	}
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 16px;
@@ -9,10 +19,16 @@
 
 .join__heading {
 	margin: 0 0 20px 0;
+	@media screen and (max-width: $desktop - 1px) {
+		text-align: center;
+	}
 }
 
 .join__list {
 	margin-top: 20px;
+	@media screen and (max-width: $desktop - 1px) {
+		justify-content: center;
+	}
 }
 
 .join__item:not(:last-child) {

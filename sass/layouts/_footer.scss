@@ -5,5 +5,12 @@
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	align-items: baseline;
+	@media screen and (max-width: $desktop - 1px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		align-items: baseline;
+	}
 }

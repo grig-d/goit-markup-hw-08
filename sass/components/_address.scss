@@ -1,6 +1,16 @@
 .address-wrap {
-	width: calc((100% - 30px * 3) / 4);
-	margin-right: 30px;
+	@media screen and (max-width: $desktop - 1px) {
+		width: 100%;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	@media screen and (min-width: $tablet) {
+		width: calc((100% - 30px) / 2);
+		margin-right: 30px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 30px * 3) / 4);
+	}
 }
 
 .address {
@@ -9,15 +19,17 @@
 
 .address__list {
 	font-style: normal;
-	line-height: 1.71;
-
+	line-height: 1.57;
 	&:first-child {
 		color: $footer-logo-color;
 	}
 }
 
 .address__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+	@media screen and (min-width: $desktop) {
+		margin-bottom: 9px;
+	}
 }
 
 .address__link {
