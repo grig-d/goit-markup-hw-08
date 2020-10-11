@@ -1580,10 +1580,6 @@ textarea {
   }
 }
 
-.join__list {
-  margin-top: 20px;
-}
-
 @media screen and (max-width: 1199px) {
   .join__list {
     justify-content: center;
