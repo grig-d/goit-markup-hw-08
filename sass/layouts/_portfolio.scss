@@ -89,12 +89,19 @@
 	margin: 0;
 	display: flex;
 	align-items: center;
-	padding: 24px;
+	padding: 0 24px;
 	transform: translateY(110%);
 	transition: transform $transition-time $transition-function;
+	@media screen and (max-width: $mobile) {
+		overflow-y: scroll;
+	}
 }
 .overlay__text {
+	margin: 0;
 	color: $accent-text-color;
+	@media screen and (max-width: 327px) {
+		font-size: 17px;
+	}
 	font-size: 18px;
 	line-height: 1.556;
 }
