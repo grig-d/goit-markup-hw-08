@@ -1358,7 +1358,7 @@ textarea {
   .portfolio__item:nth-child(odd) {
     margin-right: 30px;
   }
-  .portfolio__item:not(:last-child) {
+  .portfolio__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }

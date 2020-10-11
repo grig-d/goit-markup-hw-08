@@ -14,8 +14,7 @@
 		&:nth-child(odd) {
 			margin-right: 30px;
 		}
-		// need to fix
-		&:not(:last-child) {
+		&:not(:nth-last-child(-n + 2)) {
 			margin-bottom: 30px;
 		}
 	}
