@@ -1730,4 +1730,30 @@ textarea {
     transform: translate(0);
   }
 }
+
+.copyright-border {
+  border-top: 1px solid #757575;
+}
+
+.copyright {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #757575;
+}
 /*# sourceMappingURL=main.css.map */

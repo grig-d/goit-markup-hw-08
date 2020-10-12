@@ -1,0 +1,22 @@
+.copyright-border {
+	border-top: 1px solid $primary-text-color;
+}
+
+.copyright {
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: $primary-text-color;
+	@media screen and (min-width: $tablet) {
+		font-size: 14px;
+		line-height: 1.714;
+	}
+}
+
+.copyright__link {
+	text-decoration: none;
+	color: $primary-text-color;
+}
